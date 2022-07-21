@@ -70,7 +70,7 @@ df["reviewTime"]= pd.to_datetime(df["reviewTime"])
 df.dtypes
 
 
-#  - reviewTime'ın max değerini current_date olarak kabul etmeniz
+#  - reviewTime'ın max değerini current_date olarak kabul ediniz
 current_date = df["reviewTime"].max()
 
 df["days"] = (current_date- df["reviewTime"]).dt.days
